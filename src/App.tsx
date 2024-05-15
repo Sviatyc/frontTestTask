@@ -1,8 +1,9 @@
-import { DataTableDemo } from "./models/DataTable";
+import { ThemeProvider } from "./components/theme-provider";
+import MainPage from "./page/MainPage";
 export default function App() {
   return (
-    <div>
-      <DataTable />
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <MainPage />
+    </ThemeProvider>
   );
 }
